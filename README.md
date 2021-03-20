@@ -2,9 +2,9 @@
 - [Note](./docs/note.md)
 
 ## Usage
-npm 6
-node 14
-aws-cdk 1.94.1
+npm 6  
+node 14  
+aws-cdk 1.94.1  
 
 ## Getting started
 

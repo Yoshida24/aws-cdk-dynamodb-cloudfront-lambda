@@ -1,8 +1,18 @@
-*.js
+.env*
+.vscode
+.node-version
+.eslintrc.json
+node_modules
+reports
+coverage
 !jest.config.js
 *.d.ts
-node_modules
+TODO.md
 
 # CDK asset staging directory
 .cdk.staging
 cdk.out
+
+# Parcel build directories
+.cache
+.build
