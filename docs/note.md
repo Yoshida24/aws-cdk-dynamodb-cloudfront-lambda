@@ -75,6 +75,8 @@ $ cdk destroy
 無料。
 
 ### プロジェクトの成果物を実行
+> こちらのリリースで動作確認  
+https://github.com/Yoshida24/aws-cdk-learning/commit/f62dc64dddba891b2c77725a77412173e62e0c04
 
 ```
 $ curl -v https://vrnfhieegg.execute-api.ap-northeast-1.amazonaws.com/prod/items/123
