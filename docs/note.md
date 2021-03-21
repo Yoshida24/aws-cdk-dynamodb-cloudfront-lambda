@@ -77,11 +77,14 @@ $ cdk destroy
 > こちらのリリースで動作確認  
 https://github.com/Yoshida24/aws-cdk-learning/commit/f62dc64dddba891b2c77725a77412173e62e0c04
 
+下記APIの結果が帰ってくるか確認
 ```
-$ curl -v https://vrnfhieegg.execute-api.ap-northeast-1.amazonaws.com/prod/items/123
+$ curl -v https:/{{ID}}.execute-api.ap-northeast-1.amazonaws.com/prod/items/123
+
+// {123: "豆腐"}
 ```
 IDは[API Gateway](https://ap-northeast-1.console.aws.amazon.com/apigateway/main/apis?region=ap-northeast-1)から調べる。  
-シードデータは都度入れる必要あり。
+シードデータはdynamodbの新規作成の都度入れる必要あり。
 
 ## 番外:API Gatewayの疎通チェック
 API Gateway のAPIを辿っていくと疎通チェック画面があり、そこで疎通チェックができる。
