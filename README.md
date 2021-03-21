@@ -1,4 +1,5 @@
-# aws-cdk-learning
+# aws-cdk-dynamodb-cloudfront-lambda
+
 - [Note](./docs/note.md)
 
 ## Usage
