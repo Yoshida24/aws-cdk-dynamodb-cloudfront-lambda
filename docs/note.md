@@ -86,6 +86,12 @@ $ curl -v https:/{{ID}}.execute-api.ap-northeast-1.amazonaws.com/prod/items/123
 IDは[API Gateway](https://ap-northeast-1.console.aws.amazon.com/apigateway/main/apis?region=ap-northeast-1)から調べる。  
 シードデータはdynamodbの新規作成の都度入れる必要あり。
 
+
+## アイテム追加
+```
+$ aws dynamodb put-item --table-name products --item '{"id":{"S":"1"},"name":{"S":"豆腐"}}'
+```
+
 ## 番外:API Gatewayの疎通チェック
 API Gateway のAPIを辿っていくと疎通チェック画面があり、そこで疎通チェックができる。
 

@@ -14,10 +14,10 @@ export class AwsCdkLearningStack extends cdk.Stack {
 
     const dynamoTable = new Table(this, "items", {
       partitionKey: {
-        name: "itemId",
+        name: "id",
         type: AttributeType.STRING,
-      },
-      tableName: "items",
+    },
+    tableName: "products",
       removalPolicy: cdk.RemovalPolicy.DESTROY, // NOT recommended for production code
     });
 
